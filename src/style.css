@@ -1,0 +1,19 @@
+#categoria{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-column-gap: 5px;
+    
+}
+
+div.capa{
+    width: 100px;
+    height: 150px;
+    background-color: bisque;
+}
+
+p.capa{
+    text-align: center;
+    line-height: 150px;
+    margin:auto;
+    font-size: 10px
+}
