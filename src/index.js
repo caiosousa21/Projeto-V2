@@ -4,17 +4,20 @@ import criarCat from './criarCategoria.js'
 
 
 function component() {
-    var element = document.createElement('div');
+    let element = document.createElement('div');
 
 
-    var headerCat = document.createElement('h2');
+    let headerCat = document.createElement('h2');
     headerCat.innerHTML = 'Header da categoria'
 
-    var categoria = document.createElement('div');
+    let categoria = document.createElement('div');
     categoria.id = 'categoria';
 
-    for (var i = 0; i < 15; i++) {
+    var listaTitulos = buscarLivros('hardcover-fiction');
+
+    for (let i = 0; i < 15; i++) {
         criarCat(categoria, i);
+        inserirValores(categoria.childNodes[i], listaTitulos[i]);
     }
 
     element.appendChild(headerCat);
@@ -22,4 +25,7 @@ function component() {
     return element;
 }
 document.body.appendChild(component());
-
+function inserirValores(e, t) {
+    e.childNodes[1].innerHTML = t;
+    console.log(e.childNodes[0]);
+}
