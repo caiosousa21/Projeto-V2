@@ -17,6 +17,30 @@ p.capa{
     margin:auto;
     font-size: 10px
 }
+
+
+h2{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 21;
+    line-height: 1.3;
+}
+
 p{
     font-size: 8px;
+    font-family: sans-serif;
+}
+
+p.nome{
+    margin-top: 4px;
+    font-size: 13x;
+    line-height: 19px;
+}
+
+
+
+p.editora{
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
 }

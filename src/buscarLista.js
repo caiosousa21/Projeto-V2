@@ -1,8 +1,8 @@
 export default function buscarLivros(nome) {
     var url = 'https://api.nytimes.com/svc/books/v3/lists.json?api-key=b2359ea071d749d3ab3a35e4945853c2&list='+nome;
-    function Get(urlFilme) {
+    function Get(urlLivros) {
         var Httpreq = new XMLHttpRequest();
-        Httpreq.open('GET', urlFilme, false);
+        Httpreq.open('GET', urlLivros, false);
         Httpreq.send(null);
         return Httpreq.responseText;
     }

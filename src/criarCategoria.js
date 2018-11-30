@@ -13,13 +13,14 @@ export default function criarCat(categoria, i) {
     imagem.appendChild(nomeCapa);
 
     var nome = document.createElement('p');
-    nome.innerHTML = 'nome';
+    nome.className = 'nome';
     var autor = document.createElement('p');
-    autor.innerHTML = 'autor';
+    autor.className = 'autor;'
     var editora = document.createElement('p');
-    editora.innerHTML = 'editora';
+    editora.className = 'editora';
     var data = document.createElement('p');
-    data.innerHTML = 'data';
+    data.className = 'data';
+
 
     livro.appendChild(imagem);
     livro.appendChild(nome);
