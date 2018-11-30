@@ -78,5 +78,25 @@ button.carrinho{
 }
 
 div.livro{
-    cursor: pointer;
+    display: flex;
+    height: 291px;
+}
+
+div.botoes{
+
+    position: absolute;
+
+    align-self: flex-end;
+}
+
+button.descr{
+
+    border:none;
+    background-color: lightsteelblue;
+}
+
+button.add{
+
+    border: none;
+    background-color: coral;
 }
