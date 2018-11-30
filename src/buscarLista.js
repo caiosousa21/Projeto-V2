@@ -7,9 +7,21 @@ export default function buscarLivros(nome) {
         return Httpreq.responseText;
     }
     var ListaLivros = JSON.parse(Get(url));
-    var lista = []
-    for (var i = 0; i < 15; i++) {
-        lista[i] = ListaLivros.results[i].book_details[0].title;
+
+    function Livro(titulo, autor, editora, data){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+        this.data = data;
     }
+
+    var lista = [];
+    
+    for (var i = 0; i < 15; i++) {
+        let resultado = ListaLivros.results[i].book_details[0];
+        lista[i] = (new Livro (resultado.title, resultado.author, resultado.publisher, ListaLivros.results[i].published_date));
+    }
+
+    
     return lista;
 }
