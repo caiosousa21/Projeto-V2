@@ -75,11 +75,13 @@ button.carrinho{
     width: 100px;
     cursor:pointer;
     border:none;
+    z-index: 2;
 }
 
 div.livro{
     display: flex;
     height: 291px;
+    margin-bottom: 10%;
 }
 
 div.botoes{
