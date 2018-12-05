@@ -15,9 +15,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Projeto 2'
+            title: 'Caio Bookstore'
         }),
-        // new CleanWebpackPlugin(['dist']),
+        //new CleanWebpackPlugin(['dist']),
         new webpack.HotModuleReplacementPlugin()
     ],
     output: {

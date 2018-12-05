@@ -1,5 +1,5 @@
 export default function buscarListas() {
-    var url = 'https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=b2359ea071d749d3ab3a35e4945853c2&list=';
+    var url = 'https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=7a7846ce976e4df6ae218249bfb3a631&list=';
     function Get(urlLista) {
         var Httpreq = new XMLHttpRequest();
         Httpreq.open('GET', urlLista, false);

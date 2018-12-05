@@ -1,6 +1,6 @@
- export default function btnAdd(botaoAdd, carrinho, titulo){
+ export default function btnAdd(botaoAdd, carrinho, titulo, indice){
     
-    for (let i = 0; i < botaoAdd.length; i++) {
+    for (let i = indice; i < botaoAdd.length; i++) {
         botaoAdd[i].addEventListener('click',()=>{
             
             let contCarrinho = document.createElement('div');

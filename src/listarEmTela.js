@@ -3,6 +3,7 @@ import criarCat from './criarCategoria.js';
 import inserirValores from './inserirValoresLivro.js';
 import buscarLista from './buscarListas.js';
 import criarModal from './modal.js'
+import inserir from './insert.js'
 
 
 export default function imprimindoNaTela(elemento){
@@ -18,8 +19,16 @@ export default function imprimindoNaTela(elemento){
 
         let regua = document.createElement('hr');
         
+        let btnInserir = document.createElement('button');
+        btnInserir.className = 'btnInserir';
+        btnInserir.innerHTML = 'Inserir Livro';
+        btnInserir.addEventListener('click',()=>{
+            inserir(btnInserir.parentNode.nextSibling.nextSibling);
+        });
+
         let listaTitulos = buscarLivros(listaListas[i].nome);
         elemento.appendChild(headerCat);
+        headerCat.appendChild(btnInserir);
         elemento.appendChild(regua);
         for (let i = 0; i < 15; i++) {
             criarCat(categoria, i);
@@ -30,5 +39,4 @@ export default function imprimindoNaTela(elemento){
         }
         elemento.appendChild(categoria);
     }
-
 }
