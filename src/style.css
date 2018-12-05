@@ -117,3 +117,12 @@ div.contCarrinho{
     border-style: solid;
     border-color: #232f3e;
 }
+
+button.deleteCont{
+    background-image: url('./icon-x.png');
+    border: none;
+    height: 10px;
+    background-size: 10px;
+    background-color: rgb(252, 223, 214);
+    cursor: pointer;
+}
