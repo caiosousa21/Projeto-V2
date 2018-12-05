@@ -61,10 +61,11 @@ div.barra{
 }
 
 p.Titulo{
-    color: azure;
     margin-top: 0;
+    color: azure;
     font-size: 80px;
 }
+
 
 button.carrinho{
     margin-top: 50px;
@@ -75,7 +76,16 @@ button.carrinho{
     width: 100px;
     cursor:pointer;
     border:none;
-    z-index: 2;
+}
+
+div.contentCarrinho{
+    text-align: center;
+    background-color: rgb(252, 223, 214);
+    height: 250px;
+    margin-top: 100px;
+    visibility: hidden;
+    position: relative;
+    overflow-y: auto;
 }
 
 div.livro{
@@ -85,9 +95,7 @@ div.livro{
 }
 
 div.botoes{
-
     position: absolute;
-
     align-self: flex-end;
 }
 
@@ -101,4 +109,11 @@ button.add{
 
     border: none;
     background-color: coral;
+}
+
+div.contCarrinho{
+    font-size: 8px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #232f3e;
 }

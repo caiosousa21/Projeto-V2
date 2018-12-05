@@ -1,7 +1,8 @@
 import './style.css';
 import imprimindoNaTela from './listarEmTela.js';
 import imprimindoBarra from './inserirBarra.js';
-import criandoCarrinho from './carrinhoCompras.js'
+import criandoCarrinho from './carrinhoCompras.js';
+import botoesCard from './botoesCard.js';
 
 function component() {
     let element = document.createElement('div');
@@ -15,7 +16,8 @@ function component() {
     //     `;
     // carrinho = content;
     
-    setTimeout(()=>criandoCarrinho(), 1000)
+    setTimeout(()=>criandoCarrinho(), 1000);
+    setTimeout(()=>botoesCard(), 1000);
     imprimindoBarra(barra);
     imprimindoNaTela(elemento);
     element.appendChild(barra);

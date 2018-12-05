@@ -3,7 +3,10 @@ export default function imprimindoBarra(barra){
     let content = 
         `
             <p class='Titulo'>Caio</p>
-            <button class='carrinho'>Visualizar Carrinho</button>
+            <div class='canto'>
+                <button class='carrinho'>Carrinho</button>
+                <div class='contentCarrinho'></div>
+            </div>
         `
     barra.innerHTML=content;
 }
