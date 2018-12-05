@@ -2,6 +2,7 @@ import buscarLivros from './buscarLista.js';
 import criarCat from './criarCategoria.js';
 import inserirValores from './inserirValoresLivro.js';
 import buscarLista from './buscarListas.js';
+import criarModal from './modal.js'
 
 
 export default function imprimindoNaTela(elemento){
@@ -23,6 +24,9 @@ export default function imprimindoNaTela(elemento){
         for (let i = 0; i < 15; i++) {
             criarCat(categoria, i);
             inserirValores(categoria.children[i], listaTitulos[i]);
+            categoria.children[i].children[0].addEventListener('click',()=>{
+                criarModal(categoria.children[i]);
+            })
         }
         elemento.appendChild(categoria);
     }
