@@ -24,8 +24,9 @@ h2{
     font-weight: 700;
     font-size: 21;
     line-height: 1.3;
+    display: grid;
+    grid-template-columns: auto 183px 183px;
 }
-
 
 
 p.nome{
@@ -177,4 +178,21 @@ div.capaModal{
     width: 100px;
     height: 150px;
     background-color: bisque;
+}
+
+button.btnBuscar{
+    background-color: darkkhaki;
+    border: none;
+}
+button.btnInserir{
+    background-color: cadetblue;
+    border:none;
+}
+
+input.busca{
+    width: 100;
+}
+
+#formSearch{
+    border: none;
 }

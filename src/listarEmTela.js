@@ -4,6 +4,7 @@ import inserirValores from './inserirValoresLivro.js';
 import buscarLista from './buscarListas.js';
 import criarModal from './modal.js'
 import inserir from './insert.js'
+import search from './search.js';
 
 
 export default function imprimindoNaTela(elemento){
@@ -26,9 +27,17 @@ export default function imprimindoNaTela(elemento){
             inserir(btnInserir.parentNode.nextSibling.nextSibling);
         });
 
+        let btnBuscar = document.createElement('button');
+        btnBuscar.className = 'btnBuscar';
+        btnBuscar.innerHTML = 'Buscar Livro';
+        btnBuscar.addEventListener('click',()=>{
+            search(btnBuscar.parentNode.nextSibling.nextSibling);
+        });
+
         let listaTitulos = buscarLivros(listaListas[i].nome);
         elemento.appendChild(headerCat);
         headerCat.appendChild(btnInserir);
+        headerCat.appendChild(btnBuscar);
         elemento.appendChild(regua);
         for (let i = 0; i < 15; i++) {
             criarCat(categoria, i);
